@@ -1,0 +1,29 @@
+﻿@model IEnumerable<PingPong.Models.Player>
+
+
+	<form asp-action="WinProbabilityResults">
+		<select name="p1">
+		@foreach(var item in Model){
+
+			<option value="@item.Id">@item.Name</option>
+			
+		
+
+		
+
+		}
+		</select>
+			<select name="p2">
+		@foreach(var item in Model){
+
+			<option value="@item.Id">@item.Name</option>
+			
+		
+
+		
+
+		}
+		</select>
+		
+		<input type='submit' />
+	</form>
