@@ -1,0 +1,20 @@
+Create Table Player(
+Id int primary key identity (1,1) not null,
+[name] nvarchar(20),
+elo int,
+rating int,
+wins tinyint,
+loss tinyint
+);
+
+create table MatchHistory(
+id int primary key identity(1,1) not null,
+player1name nvarchar(20),
+player2name nvarchar(20),
+Score nvarchar(10),
+);
+
+Insert Into Player
+Values('Preston', 1, 1, 1 ,1), ('Jared',1,1,1,1);
+
+
